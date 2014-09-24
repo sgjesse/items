@@ -1,0 +1,25 @@
+name: sample
+version: 0.1.0
+description: A sample application showing App Engine code sharing
+dependencies:
+  appengine: any
+  browser: any
+#  cloud_datastore: any
+  mustache: '>=0.1.8 <0.2.0'
+dependency_overrides:
+  appengine:
+    git:
+      url: git@github.com:dart-lang/appengine.git
+#      url: https://github.com/dart-lang/appengine
+      ref: staging
+#  cloud_datastore:
+#    git:
+#      url: git@github.com:dart-lang/cloud_datastore.git
+#      url: https://github.com/dart-lang/cloud_datastore
+#      ref: v0.1
+  memcache:
+    git:
+      url: git@github.com:dart-lang/memcache.git
+#      url: https://github.com/dart-lang/memcache
+      ref: v0.1
+
